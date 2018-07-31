@@ -1,5 +1,7 @@
 :root {
 	--bg-light: #FEFFFB;
+	--color-theme-action: #FFFFFF;
+	--color-theme-secondary: #FFFFFF;
 }
 
 html {
@@ -59,4 +61,8 @@ ul, ol, li {
 
 .nav-container ul li a {
 	padding: 16px;
+}
+
+.contact i {
+	color: var(--color-theme-action);
 }
