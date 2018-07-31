@@ -1,0 +1,62 @@
+:root {
+	--bg-light: #FEFFFB;
+}
+
+html {
+	background-color: var(--bg-light);
+	color: #303633;
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	width: 100%;
+}
+
+body {
+	/* test */ background-color: peachpuff;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #303633
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+.main-content {
+	width: 764px;
+	margin: auto;
+}
+
+.skills {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.skills i {
+	padding: 0 16px;
+}
+
+.nav-container {
+	background-color: antiquewhite;
+	display: inline-flex;
+	height: 3em;
+	margin-left: auto;
+	width: 100%;
+}
+
+.nav-container a {
+	padding: 16px;
+	display: inline;
+	margin-left: 16px;
+}
+
+.nav-container ul li a {
+	padding: 16px;
+}
