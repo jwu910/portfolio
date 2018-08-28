@@ -1,28 +1,32 @@
 :root {
-	--bg-light: #FEFFFB;
-	--color-theme-action: #FFFFFF;
-	--color-theme-secondary: #FFFFFF;
+	--color-bg-dark: #303633;
+	--color-bg-light: #FEFFFB;
+	--color-text-base: #303633;
+	--color-text-light: #FEFFFB;
+	--color-theme-action: #F76C26;
+	--color-theme-secondary: #D32F09;
 }
 
 html {
-	background-color: var(--bg-light);
-	color: #303633;
+	background-color: var(--color-bg-light);
+	color: var(--color-text-base);
 	font-family: 'Lato', sans-serif;
 }
 
 header {
+	height: 60px;
 	width: 100%;
+	margin-bottom: 48px;
 }
 
 body {
-	/* test */ background-color: peachpuff;
 	margin: 0;
 	padding: 0;
 }
 
 a {
-	text-decoration: none;
-	color: #303633
+	text-decoration: underline;
+	color: var(--color-text-base)
 }
 
 ul, ol, li {
@@ -42,11 +46,12 @@ ul, ol, li {
 }
 
 .skills i {
+	color: var(--color-theme-action);
 	padding: 0 16px;
 }
 
 .nav-container {
-	background-color: antiquewhite;
+	background-color: var(--color-bg-dark);
 	display: inline-flex;
 	height: 3em;
 	margin-left: auto;
@@ -54,15 +59,68 @@ ul, ol, li {
 }
 
 .nav-container a {
-	padding: 16px;
+	color: var(--color-text-light);
 	display: inline;
+	font-size: 16px;
 	margin-left: 16px;
-}
-
-.nav-container ul li a {
-	padding: 16px;
+	padding: 12px;
+	text-decoration: none;
 }
 
 .contact i {
 	color: var(--color-theme-action);
+}
+
+.brand-logo {
+	height: 50px;
+	width: 50px;
+}
+
+.logo-container
+ {
+	padding: 10px;
+	height: 30px;
+	width: 30px;
+}
+
+a:hover {
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	color: var(--color-theme-secondary);
+	transition: all .2s ease-in;
+}
+.section {
+	border-radius: 8px;
+	box-shadow: 10px 10px 40px -20px var(--color-theme-action);
+	min-height: 400px;
+	padding: 24px;
+}
+
+.section .title-container {
+	display: inline-flex;
+	width: 100%;
+	align-content: center;
+	vertical-align: middle;
+	margin-bottom: 24px;
+}
+
+.section .title-container .logo img {
+	border-radius: 50%;
+}
+
+.section .title-container .title {
+	margin-left: 24px;
+}
+
+.section .title-container div {
+	margin: auto 0;
+}
+
+.section .title-container .links-container {
+	margin-left: auto;
+}
+
+.section .title-container .links-container a {
+	padding: 12px;
 }
