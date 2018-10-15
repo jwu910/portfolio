@@ -5,17 +5,18 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-	<header role="banner">
-		<div class="nav-container" role="navigation">
-			<div class="brand-logo">
+	<header class="container-fluid" role="banner">
+		<div class="nav-container row" role="navigation">
+			<div class="brand col-sm-4 col-md-3">
 				<div class="logo-container nav-element">
 					<object
 						height="30px"
@@ -25,80 +26,171 @@
 						class="logo">
 					</object>
 				</div>
+				<h5 class="name">Joshua Wu</h5>
 			</div>
-			<div class="nav-container nav-element">
-				<a href="#projects">Projects</a>
+			<div class="col-sm-8 col-md-9 nav-container nav-element">
+				<a href="#about">About</a>
 				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
 				<a href="#contact">Contact</a>
 			</div>
 		</div>
 	</header>
-	<div class="main-content" role="main">
-		<div class="content-container projects" id="projects">
-			<div class="content">
-				<div class="section" role="article">
-					<div class="title-container">
-						<div class="logo">
-							<img src="https://via.placeholder.com/50x50" />
-						</div>
-						<div class="title">
-							Check It Out
-						</div>
 
-						<div class="links-container">
-							<a href="https://github.com/jwu910/check-it-out">
-								<i class="fab fa-github fa-1x"></i>
-							</a>
-							<a href="https://checkit.club">
-								<i class="fa fa-globe fa-1x"></i>
-							</a>
-						</div>
-					</div>
+	<div class="main-content container-fluid" role="main">
+		<div class="about row">
+			<div class="col-md-12 col-sm-12">
+				<a name="about">&nbsp;</a>
 
-					<div class="description">
-						test
-					</div>
+				<h3 class="text-center d-block mb-med col-md-12 col-sm-12 text-center">About Me</h3>
 
+				<div class="d-block mb-med">
+					<p>
+						Hi, I'm Josh--an aspiring software engineer based just north of Orange County. My current experiences are mainly working with frontend technologies like React.js and Redux.
+					</p>
+					<p>
+						My first projects got me started with Visual Basic for Applications(VBA), building scripts to automate redundant tasks in Excel. As my requirements grew in complexity, I looked to Python to handle tasks that VBA could not. Eventually, I was introduced to web development and began working on Node.js projects.
+					</p>
+
+					<p>
+						Currently learning anything and everything. Let's <a href="#contact">connect!</a>
+					</p>
 				</div>
 
-<li>Check It Out</li>
-				<li>Photobooth</li>
-				<li>Slng</li>
-
-
-
-
+				<hr />
 			</div>
 		</div>
 
-		<div class="content-container skills" id="skills">
-			<i class="fab fa-node-js fa-2x"></i>
-			<i class="fab fa-html5 fa-2x"></i>
-			<i class="fab fa-css3-alt fa-2x"></i>
-			<i class="fab fa-react fa-2x"></i>
-			<i class="fab fa-sass fa-2x"></i>
-			<i class="fab fa-python fa-2x"></i>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<a name="skills">&nbsp;</a>
+				<h3 class="text-center d-block mb-med">Skill Set</h3>
+
+				<div class="d-block mb-med">
+					<div class="icon-list">
+						<i class="fab fa-node-js fa-2x skill"></i>
+						<i class="fab fa-html5 fa-2x skill"></i>
+						<i class="fab fa-css3-alt fa-2x skill"></i>
+						<i class="fab fa-react fa-2x skill"></i>
+						<i class="fab fa-sass fa-2x skill"></i>
+						<i class="fab fa-python fa-2x skill"></i>
+					</div>
+				</div>
+
+				<hr />
+			</div>
+		</div>
+		<div class="skills">
 		</div>
 
-		<div class="content-container contact" id="contact">
-			<h2>Lets Connect</h2>
+		<div class="row projects">
+			<div class="col-md-12 col-sm-12">
+				<a name="projects">&nbsp;</a>
 
-			<div class="content">
-				<ul>
-					<a href="https://github.com/jwu910" rel="noopener noreferrer" target="_blank">
-						<i class="fab fa-github fa-2x"></i>
-					</a>
-					<a href="https://linkedin.com/in/wujoshua" rel="noopener noreferrer" target="_blank">
-						<i class="fab fa-linkedin fa-2x"></i>
-					</a>
-					<a href="#email" rel="noopener noreferrer" target="_blank">
-						<i class="fas fa-envelope fa-2x"></i>
-					</a>
-				</ul>
+				<h3 class="d-block mb-med text-center">Projects</h3>
+
+				<div class="content">
+					<div class="section" role="article">
+						<div class="mb-med title-container">
+							<div class="logo">
+								<img src="https://cdn.rawgit.com/jwu910/check-it-out/gh-pages/assets/images/logo.png" />
+							</div>
+							<div class="title">
+								<h3>Check It Out</h3>
+							</div>
+
+							<div class="links-container">
+								<a alt="Source code" href="https://github.com/jwu910/check-it-out">
+									<i class="fab fa-github fa-2x"></i>
+								</a>
+								<a alt="Website" href="https://checkit.club">
+									<i class="fa fa-globe fa-2x"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="description">
+							<p>
+								Check It Out is a terminal based text interface that allows a user to see and select git branches fairly quickly.
+							</p>
+							<p>
+								When I first started web development, I found myself having to switch branches fairly often and with my organization using the JIRA ticketing system, we had ticket's named "TICKET-1234" and "TICKET-1235". After enough typos and failed git checkouts, Check It Out was born.
+							</p>
+						</div>
+
+						<div class="technologies">
+							<i class="fab fa-node-js fa-2x skill"></i>
+						</div>
+					</div>
+
+					<div class="section" role="article">
+						<div class="mb-med title-container">
+							<div class="title">
+								<h3>Photo Booth Automation</h3>
+							</div>
+
+							<div class="links-container">
+								<a alt="Source code" href="https://github.com/jwu910/photo-booth-automation">
+									<i class="fab fa-github fa-2x "></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="description">
+							<p>I started volunteering with California State University, Fullerton's Masters of Science in Higher Education's Maywood Education Fair in October of 2016. Editing photos and printing them was such a redunant and tedious task, I figured it could be automated.</p>
+							<p>This project was one of my first completed "passion projects" and we were able to handle a larger volume of traffic at the photo booth for the 2017 year.
+							</p>
+						</div>
+
+						<div class="technologies">
+							<i class="fab fa-python fa-2x skill"></i>
+						</div>
+					</div>
+				</div>
+
+				<hr />
+			</div>
+		</div>
+
+		<div class="row contact">
+			<div class="col-md-12 col-sm-12">
+				<a name="contact">&nbsp;</a>
+
+				<h3 class="d-block mb-med text-center">Let's Connect</h3>
+
+				<div class="content">
+					<div class="d-block mb-med">
+						<div class="icon-list mb-med">
+							<a alt="Github Profile" href="https://github.com/jwu910" rel="noopener noreferrer" target="_blank">
+								<i class="fab fa-github fa-2x"></i>
+							</a>
+							<a alt="LinkedIn Profile" href="https://linkedin.com/in/wujoshua" rel="noopener noreferrer" target="_blank">
+								<i class="fab fa-linkedin fa-2x"></i>
+							</a>
+							<a alt="Medium Profile"  href="https://medium.com/@jwu910" rel="noopener noreferrer" target="_blank">
+								<i class="fab fa-medium fa-2x"></i>
+							</a>
+							<a alt="Twitter Profile"  href="https://twitter.com/jwu910" rel="noopener noreferrer" target="_blank">
+								<i class="fab fa-twitter fa-2x"></i>
+							</a>
+						</div>
+					</div>
+
+					<form class="d-block" action="https://formspree.io/joshua.wu.0910@gmail.com" class="d-block mb-med" method="POST">
+						<input class="line-item" type="email" name="_replyto" placeholder="Your Email"/>
+						<textarea class="line-item" type="text" name="name" placeholder="Message" rows="8" required="true"></textarea>
+						<button class="btn btn-primary" type="submit">Send</button>
+					</form>
+				</div>
+
+				<hr />
 			</div>
 		</div>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 
