@@ -177,9 +177,9 @@ a:hover,
 	width: 50px;
 }
 
-/* .section .title-container .title {
-	margin-left: 24px;
-} */
+.section .title-container .logo {
+	margin-right: 8px;
+}
 
 .section .title-container div {
 	margin: auto 0;
