@@ -17,6 +17,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
+	padding-top: 70px;
 	z-index: 1;
 }
 
@@ -24,14 +25,8 @@ header.container-fluid {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	position: fixed;
 	top: 0;
 	z-index: 1000;
-}
-
-a {
-	text-decoration: underline;
-	color: var(--color-text-base)
 }
 
 li,
@@ -42,6 +37,10 @@ ul {
 
 p {
 	letter-spacing: 1px;
+}
+
+.row {
+	margin-bottom: 80px;
 }
 
 .anchor {
@@ -65,11 +64,6 @@ p {
 	margin-bottom: 24px;
 }
 
-.name {
-	color: #FFF;
-	margin: auto 24px;
-}
-
 .main-content {
 	max-width: 764px;
 	margin: auto;
@@ -80,6 +74,7 @@ p {
 	width: 80%;
 	padding-bottom: 16px;
 	margin: auto;
+	margin-top: 48px;
 	display: flex;
 	justify-content: center;
 }
@@ -102,26 +97,22 @@ i.skill:hover,
 	display: flex;
 }
 
-.nav-container {
-	background-color: var(--color-bg-dark);
-	height: 48px;
-	display: inline-flex;
-	margin: 0;
-	width: 100%;
-}
-
-.nav-container a {
-	color: var(--color-text-light);
-	display: inline;
-	font-size: 16px;
-	margin-left: 16px;
-	padding: 12px;
-	text-decoration: none;
+.navbar-brand {
+	width: auto;
 	vertical-align: middle;
+	display: flex;
 }
 
-.nav-container a:first-of-type {
-	margin-left: auto;
+.navbar-brand object {
+	margin-right: 12px;
+}
+
+.navbar-inverse .bg-inverse {
+	background: rgba(0,0,0,0.4);
+}
+
+nav {
+	background-color: var(--color-bg-dark);
 }
 
 .content-container {
@@ -152,15 +143,6 @@ i.skill:hover,
 	padding: 10px;
 	height: 30px;
 	width: 30px;
-}
-
-a:hover,
-.icon-list > a:hover {
-	-moz-transition: all .2s ease-in;
-	-o-transition: all .2s ease-in;
-	-webkit-transition: all .2s ease-in;
-	color: var(--color-theme-secondary);
-	transition: all .2s ease-in;
 }
 
 .section {
@@ -211,4 +193,47 @@ form .line-item {
 	margin-top: 16px;
 	padding: 8px;
 	width: 100%;
+}
+
+a {
+	color: var(--color-text-base);
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 763px) {
+	nav button {
+		display: none;
+	}
+
+	#hamburger {
+		display: flex;
+		flex-basis: 0;
+	}
+
+
+	#hamburger ul {
+		display: inline;
+	}
+
+	#hamburger li {
+		display: inline-flex;
+		margin: 0 16px;
+	}
+
+}
+
+#hamburger a {
+	transition: .3s ease;
+	text-decoration: none;
+	color: var(--color-text-light);
+}
+
+a:hover,
+#hamburger a:hover,
+.icon-list > a:hover {
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	color: var(--color-theme-secondary);
+	transition: all .2s ease-in;
 }
