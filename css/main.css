@@ -110,6 +110,10 @@ i.skill:hover,
 	vertical-align: middle;
 }
 
+.nav-container a:first-of-type {
+	margin-left: auto;
+}
+
 .content-container {
 	display: block;
 	margin-top:48px;
