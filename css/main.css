@@ -44,6 +44,12 @@ p {
 	letter-spacing: 1px;
 }
 
+.anchor {
+	position: absolute;
+	left: 0;
+	top: -60px;
+}
+
 .btn-primary {
 	background-color: var(--color-theme-action);
 	border: 0;
