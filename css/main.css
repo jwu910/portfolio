@@ -40,6 +40,10 @@ ul {
 	list-style: none;
 }
 
+p {
+	letter-spacing: 1px;
+}
+
 .btn-primary {
 	background-color: var(--color-theme-action);
 	border: 0;
