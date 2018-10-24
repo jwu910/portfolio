@@ -46,6 +46,7 @@ p {
 }
 
 .section-container {
+	min-height: 100vh;
 	padding-top: 4em;
 	padding-bottom: 10em;
 }
