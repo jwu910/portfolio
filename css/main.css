@@ -41,6 +41,13 @@ p {
 
 .row {
 	margin-bottom: 80px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.section-container {
+	padding-top: 4em;
+	padding-bottom: 10em;
 }
 
 .anchor {
@@ -117,7 +124,7 @@ nav {
 
 .content-container {
 	display: block;
-	margin-top:48px;
+	margin-top: 48px;
 }
 
 .content-title {
